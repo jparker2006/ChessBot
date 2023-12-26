@@ -5,5 +5,6 @@
 
 #include "piece.h"
 #include "cvector.h"
+#include "fenparser.h"
 
 #endif // MAIN_H

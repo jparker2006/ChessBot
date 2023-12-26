@@ -42,5 +42,6 @@ bool isWhite(int nPiece);
 int pieceType(int nPiece);
 
 char symbolize(int nPiece);
+int numberize(char cPiece);
 
 #endif // PIECE_H

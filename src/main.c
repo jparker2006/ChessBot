@@ -29,8 +29,17 @@ int main() {
     Board[60] = WHITE_KING; Board[61] = WHITE_BISHOP; Board[62] = WHITE_KNIGHT; Board[63] = WHITE_ROOK;
 
     print_board(Board);
-
     cvector_free(Board);
+
+    char *sStartPositionFEN = "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1";
+    cvector(int) Board2 = fenToBoard(sStartPositionFEN);
+    print_board(Board2);
+    cvector_free(Board2);
+
+    char *sNPositionFEN = "rnbqkbnr/pp1ppppp/8/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2";
+    cvector(int) Board3 = fenToBoard(sNPositionFEN);
+    print_board(Board3);
+    cvector_free(Board3);
 
     return 0;
 }
